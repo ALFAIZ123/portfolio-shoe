@@ -1,0 +1,407 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./src/output.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+
+  <!-- npx tailwindcss -i ./src/input.css -o ./src/output.css --watch  -->
+  <style>
+    body{
+      overflow-x: hidden;
+    }
+    .swiper {
+      width: 100%;
+      height: 100%;
+    }
+
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
+  </style>
+</head>
+
+<body>
+  <header class="text-black w-full h-full md:relative">
+    <div class="flex justify-between items-center md:py-6 md:px-10 py-4 px-4">
+      <div>
+        <img src="asset/logo-free-img.png" class="md:w-40 w-32 md:h-12">
+      </div>
+      <div class="hidden md:block">
+        <ul class="flex space-x-12 text-blue-700">
+          <li class="text-black"><a href="#">HOME</a></li>
+          <li><a href="#" class="hover:text-gray-700">SHOP</a></li>
+          <li><a href="#" class="hover:text-gray-700">MY ACCOUNT</a></li>
+          <li><a href="#" class="hover:text-gray-700">ABOUT</a></li>
+          <li><a href="#" class="hover:text-gray-700">CONTACT</a></li>
+          <li><a href="#" class="hover:text-gray-700">$0.00</a></li>
+        </ul>
+      </div>
+      <div class="md:hidden">
+        <button id="menu-toggle" class="border p-2">
+          <img src="asset/download__1_-removebg-preview.png" class="h-[42px] w-[42px]">
+        </button>
+      </div>
+    </div>
+    <div id="mobile-menu" class="hidden absolute top-20 right-1 z-20">
+      <ul class="flex flex-col justify-center items-center shadow-2xl text-blue-700 px-14 bg-white">
+        <li class="text-black"><a href="#">HOME</a></li>
+        <li><a href="#">SHOP</a></li>
+        <li><a href="#">MY ACCOUNT</a></li>
+        <li><a href="#">ABOUT</a></li>
+        <li><a href="#">CONTACT</a></li>
+        <li><a href="#">$0.00</a></li>
+      </ul>
+    </div>
+  </header>
+
+
+  <section class="w-full md:h-full">
+    <div class="">
+      <div class="relative">
+        <img src="asset/homepage-bg-free-img-1.jpg" class="md:w-full h-full hidden md:block">
+        <img src="asset/homepage-bg-free-img-1-removebg-preview.png" class="md:hidden w-full h-[70vh]">
+      </div>
+      <div class="w-full absolute top-40 md:top-20 flex flex-col justify-center items-center">
+        <h2 class="md:text-[200px] text-5xl text-white  absolute top-4 md:top-20 shadow-md hidden md:block drop-shadow">AirPro X3
+        </h2>
+        <img src="asset/sports-shoe4.png" class="w-[70%] ">
+      </div>
+      <div class="w-full flex items-start justify-center pb-12">
+        <button class="py-4 px-8 rounded-3xl border-2 hover:bg-[#363535] hover:text-white">-> SHOP COLLECTION</button>
+      </div>
+    </div>
+  </section>
+  <section class="w-full h-full mt-20">
+    <div class="flex flex-col items-center justify-center md:py-20 py-10">
+      <h1 class="md:text-8xl text-4xl font-extrabold font-sans">UNBELIEVABLE</h1>
+      <h2 class="md:text-5xl text-2xl font-extrabold font-sans md:my-4">SPEED. COMFORT.</h2>
+    </div>
+  </section>
+  <section class="md:mx-20 mx-12">
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="h-full shadow">
+            <img src="asset/Cards/sports-shoe1-600x600.jpg" class="w-full relative">
+            <div class=" absolute top-0 right-0 flex flex-col">
+              <a href="/"><i class="fa-solid fa-eye my-6"></i></a>
+              <a href="/"><i class="fa-solid fa-cart-shopping"></i></a>
+            </div>
+            <p class="text-sm font-bold mt-8">Running shoes</p>
+            <h3 class="text-sm font-bold">Air Pro X-3 Whole Blue</h3>
+            <p class="text-sm font-bold mt-6">$62.00</p>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="h-full shadow">
+            <img src="asset/Cards/sports-shoe2-600x600.jpg" class="w-full relative">
+            <div class=" absolute top-0 right-0 flex flex-col">
+              <a href="/"><i class="fa-solid fa-eye my-6"></i></a>
+              <a href="/"><i class="fa-solid fa-cart-shopping"></i></a>
+            </div>
+            <p class="text-sm font-bold mt-8">Running shoes</p>
+            <h3 class="text-sm font-bold">Air Pro X-3 Pink</h3>
+            <p class="text-sm font-bold mt-6">$62.00</p>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="h-full shadow">
+            <img src="asset/Cards/sports-shoe3-600x600.jpg" class="w-full relative">
+            <div class=" absolute top-0 right-0 flex flex-col">
+              <a href="/"><i class="fa-solid fa-eye my-6"></i></a>
+              <a href="/"><i class="fa-solid fa-cart-shopping"></i></a>
+            </div>
+            <p class="text-sm font-bold mt-8">Running shoes</p>
+            <h3 class="text-sm font-bold">Air Pro X-3 Green</h3>
+            <p class="text-sm font-bold mt-6">$58.00</p>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="h-full shadow">
+            <img src="asset/Cards/sports-shoe4-600x600.jpg" class="w-full relative">
+            <div class=" absolute top-0 right-0 flex flex-col">
+              <a href="/"><i class="fa-solid fa-eye my-6"></i></a>
+              <a href="/"><i class="fa-solid fa-cart-shopping"></i></a>
+            </div>
+            <p class="text-sm font-bold mt-8">Running shoes</p>
+            <h3 class="text-sm font-bold">Air Pro X-3 Aqua</h3>
+            <p class="text-sm font-bold mt-6">$58.00</p>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="h-full shadow">
+            <img src="asset/Cards/sports-shoe5-600x600.jpg" class="w-full relative">
+            <div class=" absolute top-0 right-0 flex flex-col">
+              <a href="/"><i class="fa-solid fa-eye my-6"></i></a>
+              <a href="/"><i class="fa-solid fa-cart-shopping"></i></a>
+            </div>
+            <p class="text-sm font-bold mt-8">Running shoes</p>
+            <h3 class="text-sm font-bold">Air Pro X-3 Blue</h3>
+            <p class="text-sm font-bold mt-6">$55.00</p>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="h-full shadow">
+            <img src="asset/Cards/sports-shoe6-600x600.jpg" class="w-full relative">
+            <div class=" absolute top-0 right-0 flex flex-col">
+              <a href="/"><i class="fa-solid fa-eye my-6"></i></a>
+              <a href="/"><i class="fa-solid fa-cart-shopping"></i></a>
+            </div>
+            <p class="text-sm font-bold mt-8">Running shoes</p>
+            <h3 class="text-sm font-bold">Air Pro X-3 Whole Green</h3>
+            <p class="text-sm font-bold mt-6">$62.00</p>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="h-full shadow">
+            <img src="asset/Cards/sports-shoe7-600x600.jpg" class="w-full relative">
+            <div class=" absolute top-0 right-0 flex flex-col">
+              <a href="/"><i class="fa-solid fa-eye my-6"></i></a>
+              <a href="/"><i class="fa-solid fa-cart-shopping"></i></a>
+            </div>
+            <p class="text-sm font-bold mt-8">Running shoes</p>
+            <h3 class="text-sm font-bold">Air Pro X-3 Orange</h3>
+            <p class="text-sm font-bold mt-6">$62.00</p>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="h-full shadow">
+            <img src="asset/Cards/sports-shoe8-600x600.jpg" class="w-full relative">
+            <div class=" absolute top-0 right-0 flex flex-col">
+              <a href="/"><i class="fa-solid fa-eye my-6"></i></a>
+              <a href="/"><i class="fa-solid fa-cart-shopping"></i></a>
+            </div>
+            <p class="text-sm font-bold mt-8">Running shoes</p>
+            <h3 class="text-sm font-bold">Air Pro X-3 Yellow</h3>
+            <p class="text-sm font-bold mt-6">$62.00</p>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+  </section>
+  <section class="w-full h-full md:flex my-44">
+    <div class="md:w-1/2">
+      <div class="swiper mySwiper1">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="h-full shadow">
+              <img src="asset/Cards/sports-shoe1-600x600.jpg" class="w-full">
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="h-full shadow">
+              <img src="asset/Cards/sports-shoe2-600x600.jpg" class="w-full">
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="h-full shadow">
+              <img src="asset/Cards/sports-shoe3-600x600.jpg" class="w-full">
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="h-full shadow">
+              <img src="asset/Cards/sports-shoe4-600x600.jpg" class="w-full">
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="h-full shadow">
+              <img src="asset/Cards/sports-shoe5-600x600.jpg" class="w-full">
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="h-full shadow">
+              <img src="asset/Cards/sports-shoe6-600x600.jpg" class="w-full">
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="h-full shadow">
+              <img src="asset/Cards/sports-shoe7-600x600.jpg" class="w-full">
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="h-full shadow">
+              <img src="asset/Cards/sports-shoe8-600x600.jpg" class="w-full">
+            </div>
+          </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+    <div class="md:w-1/2 flex flex-col justify-center mx-8">
+      <h3 class="text-3xl font-bold">Limited Stock Available!</h3>
+      <h1 class="text-6xl font-bold my-8">AirPro X2</h1>
+      <p class="text-xl  my-8">Consectetur adipiscing elit elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus
+        leo.​ Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      <div class="w-full flex items-start pb-12">
+        <button class="py-4 px-8 rounded-3xl border-2 hover:bg-[#363535] hover:text-white">-> SHOP COLLECTION</button>
+      </div>
+    </div>
+  </section>
+  <section class="w-full">
+    <div class="flex flex-col md:flex-row justify-evenly md:px-20 px-6 my-28">
+      <div class="md:w-1/4 md:text-center px-2">
+        <h1 class="md:text-3xl text-xl font-bold">Research</h1>
+        <p class="md:text-lg md:my-10 my-12 px-2">Lorem ipsum dolor sit amet, consec tetur elit. Ut elit tellus, luctus nec ullam corper.</p>
+      </div>
+      <div class="md:w-1/4 md:text-center px-2">
+        <h1 class="md:text-3xl text-xl font-bold">Idea & Concept</h1>
+        <p class="md:text-lg md:my-10 my-12 px-2">Lorem ipsum dolor sit amet, consec tetur elit. Ut elit tellus, luctus nec ullam corper.</p>
+      </div>
+      <div class="md:w-1/4 md:text-center px-2">
+        <h1 class="md:text-3xl text-xl font-bold">Design & Production</h1>
+        <p class="md:text-lg md:my-10 my-12 px-2">Lorem ipsum dolor sit amet, consec tetur elit. Ut elit tellus, luctus nec ullam corper.</p>
+      </div>
+      <div class="md:w-1/4 md:text-center px-2">
+        <h1 class="md:text-3xl text-xl font-bold">Sales & Support​</h1>
+        <p class="md:text-lg md:my-10 my-12 px-2">Lorem ipsum dolor sit amet, consec tetur elit. Ut elit tellus, luctus nec ullam corper.</p>
+      </div>
+    </div>
+  </section>
+  <section class="w-full md:h-screen">
+     <div class="h-full bg-custom bg-cover md:bg-center bg-fixed">
+     <div class="h-full bg-black opacity-50">
+      <div class="w-full md:h-full flex flex-col md:text-center justify-evenly md:py-20  py-32 px-8 z-50">
+        <p class="md:text-2xl text-lg font-bold text-white">Limited Stock Available!</p>
+        <p class="md:text-6xl text-4xl font-bold md:my-0 my-6 text-white">AirPro X3. Turbocharged.</p>
+        <p class="md:text-lg text-sm font-bold text-white md:px-44">Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo.</p>
+        <div>
+         <button class="py-4 px-8 rounded-3xl border-2 md:my-0 my-6 bg-white hover:bg-[skyblue] hover:text-white">-> SHOP COLLECTION</button>
+        </div>
+      </div>
+     </div>
+     </div>
+  </section>
+  <section class="w-full h-full text-gray-600">
+    <div class="w-full md:flex md:my-20 md:mx-24 px-8">
+      <div class="md:w-1/5 flex flex-col justify-center">
+         <p class="text-2xl font-bold my-8">Categories</p>
+         <p>Running Shoes</p>
+         <p>Yoga Shoes</p>
+         <p>Sports Shoes</p>
+         <p>Casual Shoes</p>
+      </div>
+      <div class="md:w-1/5 flex flex-col justify-center">
+         <p class="text-2xl font-bold my-8">Business</p>
+         <p>Company Profile</p>
+         <p>Brand Kit</p>
+         <p> Social Responsibility</p>
+         <p>Media</p>
+      </div>
+      <div class="md:w-1/5 flex flex-col justify-center">
+         <p class="text-2xl font-bold my-8">About</p>
+         <p>Board of Directors</p>
+         <p>Company Profile</p>
+         <p>Careers</p>
+         <p>Numbers Speak</p>
+      </div>
+      <div class="md:w-1/5 flex flex-col justify-center">
+         <p class="text-2xl font-bold my-8">Useful Links</p>
+         <p>Return Policies</p>
+         <p>Announcements</p>
+         <p>Have issues?</p>
+         <p>Media Kit</p>
+      </div>
+      <div class="flex flex-col justify-center">
+        <p class="text-2xl font-bold my-8">Follow Us</p>
+        <div class="">
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-brands fa-square-instagram"></i>
+          <i class="fa-brands fa-youtube"></i>
+          <i class="fa-brands fa-linkedin"></i>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="w-full mt-32">
+    <div class="flex flex-col md:flex-row justify-between md:items-center text-center md:px-24 px-6 my-10">
+      <p class="md:text-lg">Copyright © 2024 Shoe Store | <span class="text-blue-700 hover:text-gray-700 cursor-pointer">Credits</span></p>
+      <p class="md:text-lg my-4">Powered by Shoe Store</p>
+    </div>
+  </section>
+
+
+
+
+
+
+  <script>
+    document.getElementById('menu-toggle').addEventListener('click', function () {
+      var menu = document.getElementById('mobile-menu');
+      menu.classList.toggle('hidden');
+    });
+  </script>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      var swiper = new Swiper('.mySwiper', {
+        slidesPerView: 4,
+        spaceBetween: 40,
+        freeMode: true,
+        breakpoints: {
+          300: {
+            slidesPerView: 1,
+            spaceBetween: 10,
+          },
+          768: {
+            slidesPerView: 3,
+            spaceBetween: 30,
+          },
+          1024: {
+            slidesPerView: 4,
+            spaceBetween: 40,
+          },
+        },
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+        },
+      });
+    });
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <script>
+    var swiper = new Swiper(".mySwiper1", {
+      cssMode: true,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      pagination: {
+        el: ".swiper-pagination",
+      },
+
+      keyboard: true,
+    });
+  </script>
+</body>
+
+</html>
